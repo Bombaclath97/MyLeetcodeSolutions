@@ -5,8 +5,8 @@ Just started working on this. So, we have 2 arrays which we know are sorted, and
 
 In the bigger picture, we have three cases:
 1. An array is empty. In this case, we simply calculate the median over the non-empty array. We then go to either case 2 or 3;
-2. The total number of elements divided by two is odd, so we get the value of the element at that index as median value;
-3. The total number of elements divided by two is even, so we sum the value of the element at that index minus 1 and the value of the element at that index, we divide it by two, and get this value as median value.
+2. The total number of elements is odd, so we get the value of the element at that index divided by 2 as median value;
+3. The total number of elements is even, so we sum the value of the element at that index divided by 2 minus 1 and the value of the element divided by two at that index, we divide it by two, and get this value as median value.
 
 Obviously merging the two arrays is useless, as we would get complexity O(n + m). 
 
@@ -34,3 +34,11 @@ i + j = 2, we have to get this value. We save First[1], as it's less than Second
 
 Median = (2 + 3) / 2 = 2.5
 Value checks out. We are onto something. Let's go baby.
+
+
+## 09 mar 2021
+Gotta fix the branching of which iterator 
+# SUBMISSIONS
+1. First submission (03/09/2021 00:02) got an IndexOutOfBoundsException cause I f-ed up the increment check. I have to see if we are at the end of the array too.
+2. Second submission perfectly the same as the first. I double f-ed up.
+3. Third submission (03/09/2021 00:06) gave a wrong answer. Has to do with how I calculate the median for even-sized samples and odd sums. Easy to fix.
