@@ -37,7 +37,7 @@ Value checks out. We are onto something. Let's go baby.
 
 
 ## 09 mar 2021
-Gotta fix the branching of which iterator 
+Gotta fix the branching of which iterator to increase. Damn, java is baaaaaaad
 # SUBMISSIONS
 1. First submission (03/09/2021 00:02) got an IndexOutOfBoundsException cause I f-ed up the increment check. I have to see if we are at the end of the array too.
 2. Second submission perfectly the same as the first. I double f-ed up.
