@@ -17,19 +17,19 @@ Quick ascii art for reference to my future self ---
 (Length of First) + (Length of Second) = 4. 
 Median = (element at (i+j = 1) + element at (i+j = 2)) / 2
 
-First           Second
-| 1 | 3 |       | 2 | 4 |
-  i               j             
+First-----------Second---
+| 1 | 3 |-------| 2 | 4 |
+--i---------------j------             
 i + j = 0, but we are considering element First[0], as it is less than Second[0], so we increment i and do it again
 
-First           Second
-| 1 | 3 |       | 2 | 4 |
-      i           j           
+First-----------Second---
+| 1 | 3 |-------| 2 | 4 |
+------i-----------j-----           
 i + j = 1, we have to get this value. We save Second[0], as it's less than First[1], and we increment J for the same reason
 
-First           Second
-| 1 | 3 |       | 2 | 4 |
-      i               j           
+First-----------Second---
+| 1 | 3 |-------| 2 | 4 |
+------i---------------j--           
 i + j = 2, we have to get this value. We save First[1], as it's less than Second[1]. We got our two values, 2 and 3. We can stop iterating
 
 Median = (2 + 3) / 2 = 2.5
